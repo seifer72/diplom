@@ -1,0 +1,25 @@
+%h1 Listing defenses
+
+%table
+  %tr
+    %th Time start
+    %th Time end
+    %th Scientific work
+    %th Report
+    %th
+    %th
+    %th
+
+  - @defenses.each do |defense|
+    %tr
+      %td= defense.time_start
+      %td= defense.time_end
+      %td= defense.scientific_work_id
+      %td= defense.report
+      %td= link_to 'Show', defense
+      %td= link_to 'Edit', edit_defense_path(defense)
+      %td= link_to 'Destroy', defense, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Defense', new_defense_path

@@ -1,0 +1,33 @@
+=form_for(@user, html: { class: 'form-horizontal'}) do |f|
+
+  .control-group
+    =f.label :email,nil,class: 'control-label'
+    .controls=f.text_field :email
+  .control-group
+    =f.label :password,nil,class: 'control-label'
+    .controls=f.password_field :password
+  .control-group
+    =f.label :password_confirmation,nil,class: 'control-label'
+    .controls=f.password_field :password_confirmation
+  .control-group
+    =f.label :name,nil,class: 'control-label'
+    .controls=f.text_field :name
+  .control-group
+    .control-label
+      %label Права пользователей
+    .controls
+      %label
+        = f.check_box :admin_per
+        = User.human_attribute_name(:admin_per)
+      %label
+        = f.check_box :chief_per
+        = User.human_attribute_name(:chief_per)
+      %label
+        = f.check_box :worker_per
+        = User.human_attribute_name(:worker_per)
+      %label
+        =f.check_box :aspirant_per
+        =User.human_attribute_name(:aspirant_per)
+
+  .form-actions
+    =f.submit nil,:class=>'btn btn-primary'

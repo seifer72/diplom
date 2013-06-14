@@ -1,0 +1,15 @@
+
+%table.table.table-bordered.table-hover
+  %tr
+    %th Фамилия
+    %th Имя
+    %th Отчество
+    %th Тема
+    %th Действие
+    -@aspirants.each do |x|
+      %tr
+        %td=x.fname
+        %td=x.sname
+        %td=x.mname
+        %td=x.theme
+        %td= link_to "Просмотр", aspirant_path(x), :class => 'btn btn-info'

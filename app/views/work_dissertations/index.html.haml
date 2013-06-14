@@ -1,0 +1,27 @@
+%h1 Listing work_dissertations
+
+%table
+  %tr
+    %th Work
+    %th Time start
+    %th Time end
+    %th Report
+    %th Scientific work
+    %th
+    %th
+    %th
+
+  - @work_dissertations.each do |work_dissertation|
+    %tr
+      %td= work_dissertation.work
+      %td= work_dissertation.time_start
+      %td= work_dissertation.time_end
+      %td= work_dissertation.report
+      %td= work_dissertation.scientific_work_id
+      %td= link_to 'Show', work_dissertation
+      %td= link_to 'Edit', edit_work_dissertation_path(work_dissertation)
+      %td= link_to 'Destroy', work_dissertation, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Work dissertation', new_work_dissertation_path

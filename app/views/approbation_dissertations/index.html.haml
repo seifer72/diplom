@@ -1,0 +1,19 @@
+%h1 Listing approbation_dissertations
+
+%table
+  %tr
+    %th Dissertation
+    %th
+    %th
+    %th
+
+  - @approbation_dissertations.each do |approbation_dissertation|
+    %tr
+      %td= approbation_dissertation.dissertation_id
+      %td= link_to 'Show', approbation_dissertation
+      %td= link_to 'Edit', edit_approbation_dissertation_path(approbation_dissertation)
+      %td= link_to 'Destroy', approbation_dissertation, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Approbation dissertation', new_approbation_dissertation_path

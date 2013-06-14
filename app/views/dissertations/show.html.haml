@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Aspirant:
+  = @dissertation.aspirant_id
+
+= link_to 'Edit', edit_dissertation_path(@dissertation)
+\|
+= link_to 'Back', dissertations_path

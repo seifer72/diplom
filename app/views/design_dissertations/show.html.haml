@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Dissertation:
+  = @design_dissertation.dissertation_id
+%p
+  %b Content:
+  = @design_dissertation.content
+%p
+  %b Srok:
+  = @design_dissertation.srok
+
+= link_to 'Edit', edit_design_dissertation_path(@design_dissertation)
+\|
+= link_to 'Back', design_dissertations_path

@@ -1,0 +1,25 @@
+%h1 Listing theoretical_parts
+
+%table
+  %tr
+    %th Stages work
+    %th Content
+    %th Time start
+    %th Time end
+    %th
+    %th
+    %th
+
+  - @theoretical_parts.each do |theoretical_part|
+    %tr
+      %td= theoretical_part.stages_work_id
+      %td= theoretical_part.content
+      %td= theoretical_part.time_start
+      %td= theoretical_part.time_end
+      %td= link_to 'Show', theoretical_part
+      %td= link_to 'Edit', edit_theoretical_part_path(theoretical_part)
+      %td= link_to 'Destroy', theoretical_part, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Theoretical part', new_theoretical_part_path

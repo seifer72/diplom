@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  content: MyString
+  time_start: 2013-01-19
+  time_end: 2013-01-19
+  aspirant_id: 1
+  chief_id: 1
+
+two:
+  content: MyString
+  time_start: 2013-01-19
+  time_end: 2013-01-19
+  aspirant_id: 1
+  chief_id: 1

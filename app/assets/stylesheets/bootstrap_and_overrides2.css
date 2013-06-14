@@ -1,0 +1,37 @@
+body{
+background-color: #ffffff;
+    margin: 5px;
+    color: #333;
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 18px; }
+
+.test{
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+.test3{
+    background: #750a0e;
+}
+.test4{
+    color: #e4e4e4;
+}
+
+.test1{
+    margin: -10px 5px 0 0;
+}
+
+#logo img{
+    padding: 10px;
+    position: absolute;
+}
+.container.nav-collapse{
+    float: right;
+}
+.container{
+    width: 100%;
+}
+#menu {
+    nav-left: 90px;
+
+}

@@ -1,0 +1,65 @@
+
+%h1 Рабочий учебный план аспиранта
+-if @work_plan.check_status_11? || @work_plan.check_status_22?
+  =link_to "Отправить на доработку", work_plan_send2_path(@work_plan) ,:class=>"btn"
+
+  =link_to "Принять", work_plan_send3_path(@work_plan) ,:class=>"btn"
+%h2
+  на период от
+  =l @work_plan.per_start ,:format=>:long
+  до
+  =l @work_plan.per_end,:format=>:long
+
+
+%h3 Подготовка и сдача кандидатских экзаменов:
+%table.table.table-bordered.table-hover
+  %tr
+    %th Наименование работы
+    %th Дата начала
+    %th Дата окончания
+    %th По плану
+    %th Фактически
+
+    -@work_plan.candidate.each do |x|
+
+      %tr
+        %td=x.name
+        %td=x.time_start
+        %td=x.time_end
+        %td=x.plan
+        %td=x.fact
+
+%h3 Дисциплины для изучения:
+%table.table.table-bordered.table-hover
+  %tr
+    %th Наименование работы
+    %th Дата начала
+    %th Дата окончания
+    %th По плану
+    %th Фактически
+
+    -@work_plan.discipline.each do |x|
+      %tr
+        %td=x.name
+        %td=x.time_start
+        %td=x.time_end
+        %td=x.plan
+        %td=x.fact
+
+%h3 Научная работа
+%table.table.table-bordered.table-hover
+  %tr
+    %th Наименование работы
+    %th Дата начала
+    %th Дата окончания
+    %th По плану
+    %th Фактически
+    -@work_plan.scientific_works_for_plan.each do |x|
+      %tr
+        %td=x.name
+        %td=x.time_start
+        %td=x.time_end
+        %td=x.plan
+        %td=x.fact
+
+%br

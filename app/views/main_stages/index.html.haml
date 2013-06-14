@@ -1,0 +1,25 @@
+%h1 Listing main_stages
+
+%table
+  %tr
+    %th Introduction result
+    %th Content
+    %th Time start
+    %th Time end
+    %th
+    %th
+    %th
+
+  - @main_stages.each do |main_stage|
+    %tr
+      %td= main_stage.introduction_result_id
+      %td= main_stage.content
+      %td= main_stage.time_start
+      %td= main_stage.time_end
+      %td= link_to 'Show', main_stage
+      %td= link_to 'Edit', edit_main_stage_path(main_stage)
+      %td= link_to 'Destroy', main_stage, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Main stage', new_main_stage_path

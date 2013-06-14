@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Stages work:
+  = @theoretical_part.stages_work_id
+%p
+  %b Content:
+  = @theoretical_part.content
+%p
+  %b Time start:
+  = @theoretical_part.time_start
+%p
+  %b Time end:
+  = @theoretical_part.time_end
+
+= link_to 'Edit', edit_theoretical_part_path(@theoretical_part)
+\|
+= link_to 'Back', theoretical_parts_path

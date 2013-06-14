@@ -1,0 +1,32 @@
+
+%a.brand{:style=>"color:#fff;padding:10px 0 0 300px"} Аспирантура
+.container.nav-collapse
+  %ul.nav.pull-right
+    -if logged_in?
+      %li.test=current_user.name
+
+      %li.test.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+        = current_user.human_role
+        %b.caret
+      %ul.test1.dropdown-menu
+        -if current_user.check_admin?
+          %li=link_to "Администратор", set_role_adm_path
+        -if current_user.check_aspirant?
+          %li=link_to "Аспирант" , set_role_asp_path
+        -if current_user.check_chief?
+          %li=link_to "Научный руководитель" , set_role_chief_path
+        -if current_user.check_worker?
+          %li=link_to "Работник аспирантуры" , set_role_work_path
+      -if current_user.aspirant?
+        -if current_user.aspirant.present?
+          %li=link_to "Профиль",edit_aspirant_path(current_user.aspirant),:style=>"color:#fff;"
+      -if current_user.chief?
+        -if current_user.chief.present?
+          %li=link_to "Профиль",edit_chief_path(current_user.chief),:style=>"color:#fff;"
+
+      %li=link_to "Выход",logout_path ,:style=>"color:#fff;"
+
+
+
+    -else
+      %li=link_to "Вход", new_session_path ,:style=>"color:#fff;"

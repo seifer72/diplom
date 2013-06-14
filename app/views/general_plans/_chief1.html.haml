@@ -1,0 +1,97 @@
+%h1 Общий учебный план аспиранта
+-if @general_plan.check_status_1? || @general_plan.check_status_2?
+  =link_to "Отправить на доработку", general_plan_send2_path(@general_plan) ,:class=>"btn"
+  =link_to "Принять", general_plan_send3_path(@general_plan) ,:class=>"btn"
+%h3 Учебная работа
+%table.table.table-bordered.table-hover
+  %tr
+    %th Наименование работы
+    %th Дата начала
+    %th Дата окончания
+    %th Форма отчетности
+
+  - @general_plan.academic_work.exams.each do |x|
+
+    -if x.present?
+      %tr
+        %td=x.disciplin_name
+        %td=x.time_start
+        %td=x.time_end
+        %td=x.report
+
+%h3 Дисциплины для изучения
+%table.table.table-bordered.table-hover
+  %tr
+    %th Наименование работы
+    %th Дата начала
+    %th Дата окончания
+    %th Форма отчетности
+
+  -@general_plan.academic_work.disciplines_studies.each do |x|
+    -if x.present?
+      %tr
+        %td=x.disciplin_name
+        %td=x.time_start
+        %td=x.time_end
+        %td=x.report
+
+%h3 Научная работа
+%h6 Работа над дисертацией
+%table.table.table-bordered.table-hover
+  %tr
+    %th Наименование работы
+    %th Дата начала
+    %th Дата окончания
+    %th Форма отчетности
+
+
+  -@general_plan.scientific_work.work_dissertations.each do |v|
+
+    %tr
+      %td=v.work
+      %td=v.time_start
+      %td=v.time_end
+      %td=v.report
+
+
+%h3 Предварительная защита научной работы
+%table.table.table-bordered.table-hover
+  %tr
+    %th Дата начала
+    %th Дата окончания
+    %th Форма отчетности
+
+  -@general_plan.scientific_work.defense.each do |x|
+    %tr
+      %td=x.time_start
+      %td=x.time_end
+      %td=x.report
+
+%h3 Представление диссертации в ученый совет
+%table.table.table-bordered.table-hover
+  %tr
+    %th Дата начала
+    %th Дата окончания
+    %th Форма отчетности
+
+  -@general_plan.scientific_work.dissertation_represents.each do |x|
+    %tr
+      %td=x.time_start
+      %td=x.time_end
+      %td=x.report
+
+
+%h3 Другие виды работ
+%table.table.table-bordered.table-hover
+  %tr
+    %th Наименование работы
+    %th Дата начала
+    %th Дата окончания
+    %th Форма отчетности
+  -@general_plan.scientific_work.second_works.each do |x|
+    %tr
+      %td=x.work
+      %td=x.time_start
+      %td=x.time_end
+      %td=x.report
+

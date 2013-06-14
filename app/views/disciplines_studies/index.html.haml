@@ -1,0 +1,27 @@
+%h1 Listing disciplines_studies
+
+%table
+  %tr
+    %th Academic work
+    %th Disciplin name
+    %th Time start
+    %th Time end
+    %th Report
+    %th
+    %th
+    %th
+
+  - @disciplines_studies.each do |disciplines_study|
+    %tr
+      %td= disciplines_study.academic_work_id
+      %td= disciplines_study.disciplin_name
+      %td= disciplines_study.time_start
+      %td= disciplines_study.time_end
+      %td= disciplines_study.report
+      %td= link_to 'Show', disciplines_study
+      %td= link_to 'Edit', edit_disciplines_study_path(disciplines_study)
+      %td= link_to 'Destroy', disciplines_study, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Disciplines study', new_disciplines_study_path

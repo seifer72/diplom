@@ -1,0 +1,27 @@
+%h1 Listing exams
+
+%table
+  %tr
+    %th Academic work
+    %th Disciplin name
+    %th Time start
+    %th Time end
+    %th Report
+    %th
+    %th
+    %th
+
+  - @exams.each do |exam|
+    %tr
+      %td= exam.academic_work_id
+      %td= exam.disciplin_name
+      %td= exam.time_start
+      %td= exam.time_end
+      %td= exam.report
+      %td= link_to 'Show', exam
+      %td= link_to 'Edit', edit_exam_path(exam)
+      %td= link_to 'Destroy', exam, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Exam', new_exam_path

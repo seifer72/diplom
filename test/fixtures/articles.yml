@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  approbation_dissertation_id: 1
+  content: MyString
+  period: 2013-01-21
+
+two:
+  approbation_dissertation_id: 1
+  content: MyString
+  period: 2013-01-21

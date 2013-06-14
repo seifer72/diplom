@@ -1,0 +1,19 @@
+%h1 Listing dissertations
+
+%table
+  %tr
+    %th Aspirant
+    %th
+    %th
+    %th
+
+  - @dissertations.each do |dissertation|
+    %tr
+      %td= dissertation.aspirant_id
+      %td= link_to 'Show', dissertation
+      %td= link_to 'Edit', edit_dissertation_path(dissertation)
+      %td= link_to 'Destroy', dissertation, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Dissertation', new_dissertation_path

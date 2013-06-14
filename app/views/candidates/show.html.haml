@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @candidate.name
+%p
+  %b Time start:
+  = @candidate.time_start
+%p
+  %b Time end:
+  = @candidate.time_end
+%p
+  %b Plan:
+  = @candidate.plan
+%p
+  %b Fact:
+  = @candidate.fact
+%p
+  %b Work plan:
+  = @candidate.work_plan_id
+
+= link_to 'Edit', edit_candidate_path(@candidate)
+\|
+= link_to 'Back', candidates_path

@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Time start:
+  = @dissertation_represent.time_start
+%p
+  %b Time end:
+  = @dissertation_represent.time_end
+%p
+  %b Scientific work:
+  = @dissertation_represent.scientific_work_id
+%p
+  %b Report:
+  = @dissertation_represent.report
+
+= link_to 'Edit', edit_dissertation_represent_path(@dissertation_represent)
+\|
+= link_to 'Back', dissertation_represents_path

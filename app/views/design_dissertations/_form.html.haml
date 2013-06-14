@@ -1,0 +1,17 @@
+= form_for @design_dissertation do |f|
+  - if @design_dissertation.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@design_dissertation.errors.count, "error")} prohibited this design_dissertation from being saved:"
+      %ul
+        - @design_dissertation.errors.full_messages.each do |msg|
+          %li= msg
+
+
+  .field
+    = f.label :content
+    = f.text_field :content
+  .field
+    = f.label :srok
+    = f.date_select :srok
+  .actions
+    = f.submit 'Сохранить'

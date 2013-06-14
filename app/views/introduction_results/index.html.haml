@@ -1,0 +1,25 @@
+%h1 Listing introduction_results
+
+%table
+  %tr
+    %th Dissertation
+    %th Form
+    %th Organiz
+    %th Act
+    %th
+    %th
+    %th
+
+  - @introduction_results.each do |introduction_result|
+    %tr
+      %td= introduction_result.dissertation_id
+      %td= introduction_result.form
+      %td= introduction_result.organiz
+      %td= introduction_result.act
+      %td= link_to 'Show', introduction_result
+      %td= link_to 'Edit', edit_introduction_result_path(introduction_result)
+      %td= link_to 'Destroy', introduction_result, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Introduction result', new_introduction_result_path

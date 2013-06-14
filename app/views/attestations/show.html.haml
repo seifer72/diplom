@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Content:
+  = @attestation.content
+%p
+  %b Time start:
+  = @attestation.time_start
+%p
+  %b Time end:
+  = @attestation.time_end
+%p
+  %b Aspirant:
+  = @attestation.aspirant_id
+%p
+  %b Chief:
+  = @attestation.chief_id
+
+= link_to 'Edit', edit_attestation_path(@attestation)
+\|
+= link_to 'Back', attestations_path

@@ -1,0 +1,13 @@
+= form_for @dissertation do |f|
+  - if @dissertation.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@dissertation.errors.count, "error")} prohibited this dissertation from being saved:"
+      %ul
+        - @dissertation.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :aspirant_id
+    = f.select :aspirant_id , Aspirant.all.map{|a| [a.mname,a.id]}
+  .actions
+    = f.submit 'Save'

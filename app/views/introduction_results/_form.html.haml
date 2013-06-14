@@ -1,0 +1,22 @@
+= form_for @introduction_result do |f|
+  - if @introduction_result.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@introduction_result.errors.count, "error")} prohibited this introduction_result from being saved:"
+      %ul
+        - @introduction_result.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :dissertation_id
+    = f.number_field :dissertation_id
+  .field
+    = f.label :form
+    = f.text_field :form
+  .field
+    = f.label :organiz
+    = f.text_field :organiz
+  .field
+    = f.label :act
+    = f.date_select :act
+  .actions
+    = f.submit 'Save'

@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Dissertation:
+  = @introduction_result.dissertation_id
+%p
+  %b Form:
+  = @introduction_result.form
+%p
+  %b Organiz:
+  = @introduction_result.organiz
+%p
+  %b Act:
+  = @introduction_result.act
+
+= link_to 'Edit', edit_introduction_result_path(@introduction_result)
+\|
+= link_to 'Back', introduction_results_path

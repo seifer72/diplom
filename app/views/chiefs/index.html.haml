@@ -1,0 +1,28 @@
+%h1 Список руководителей
+
+%table.table.table-bordered.table-hover
+  %tr
+    %th Имя
+    %th Фамилия
+    %th Отчество
+    %th Ученая степень
+    %th Действие
+
+  - @chiefs.each do |chief|
+    %tr
+      %td= chief.fname
+      %td= chief.sname
+      %td= chief.mname
+      %td= chief.title
+      %td
+        .btn-group
+          = link_to 'Редактировать', edit_chief_path(chief), :class => 'btn btn-mini btn-info'
+          %button.btn.btn-mini.btn-info.dropdown-toggle(data-toggle="dropdown")
+            %span.caret
+          %ul.dropdown-menu
+            = link_to 'Удалить', chief, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn"
+
+
+%br
+
+

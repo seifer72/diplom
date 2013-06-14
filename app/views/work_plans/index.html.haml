@@ -1,0 +1,5 @@
+%h1 Рабочие планы
+-if current_user.chief?
+  =render 'chief'
+-if current_user.aspirant?
+  =render 'aspirant'

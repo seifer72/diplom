@@ -1,0 +1,25 @@
+
+
+
+%table.table.table-bordered.table-hover
+  %tr
+    %th Период от
+    %th До
+    %th Статус
+    %th Действие
+
+
+  - current_user.aspirant.work_plan.each do |work_plan|
+    %tr
+      %td=l work_plan.per_start, :format=> :long
+      %td=l work_plan.per_end, :format=>:long
+      %td=status(work_plan.status.to_i)
+      %td
+        .btn-group
+          = link_to 'Показать', work_plan, :class => 'btn btn-info'
+
+          %button.btn.btn-info.dropdown-toggle(data-toggle="dropdown")
+            %span.caret
+          %ul.dropdown-menu
+            %li= link_to 'Редактировать', edit_work_plan_path(work_plan) , :class => 'btn btn-info'
+%br

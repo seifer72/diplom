@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  dissertation_id: 1
+  form: MyString
+  organiz: MyString
+  act: 2013-01-21
+
+two:
+  dissertation_id: 1
+  form: MyString
+  organiz: MyString
+  act: 2013-01-21

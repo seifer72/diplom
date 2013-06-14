@@ -1,0 +1,25 @@
+%h1 Представление дисертации
+
+%table
+  %tr
+    %th Time start
+    %th Time end
+    %th Scientific work
+    %th Report
+    %th
+    %th
+    %th
+
+  - @dissertation_represents.each do |dissertation_represent|
+    %tr
+      %td= dissertation_represent.time_start
+      %td= dissertation_represent.time_end
+      %td= dissertation_represent.scientific_work_id
+      %td= dissertation_represent.report
+      %td= link_to 'Show', dissertation_represent
+      %td= link_to 'Edit', edit_dissertation_represent_path(dissertation_represent)
+      %td= link_to 'Destroy', dissertation_represent, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Dissertation represent', new_dissertation_represent_path

@@ -1,0 +1,62 @@
+= form_for @aspirant, :html => { :class => 'form-horizontal' } do |f|
+  .control-group
+    = f.label :fname, :class => 'control-label'
+    .controls
+      = f.text_field :fname, :class => 'text_field'
+  .control-group
+    = f.label :sname, :class => 'control-label'
+    .controls
+      = f.text_field :sname, :class => 'text_field'
+  .control-group
+    = f.label :mname, :class => 'control-label'
+    .controls
+      = f.text_field :mname, :class => 'text_field'
+  .control-group
+    = f.label :cathedra, :class => 'control-label'
+    .controls
+      = f.text_field :cathedra, :class => 'text_field'
+  .control-group
+    = f.label :index, :class => 'control-label'
+    .controls
+      = f.number_field :index, :class => 'number_field'
+  .control-group
+    = f.label :time_start, :class => 'control-label'
+    .controls
+      = f.date_select :time_start, :class => 'date_select'
+  .control-group
+    = f.label :time_end, :class => 'control-label'
+    .controls
+      = f.date_select :time_end, :class => 'date_select'
+  .control-group
+    = f.label :specialty, :class => 'control-label'
+    .controls
+      = f.text_field :specialty, :class => 'text_field'
+  .control-group
+    = f.label :direction, :class => 'control-label'
+    .controls
+      = f.text_field :direction, :class => 'text_field'
+  .control-group
+    = f.label :theme, :class => 'control-label'
+    .controls
+      = f.text_field :theme, :class => 'text_field'
+  .control-group
+    =f.label "Научный руководитель",class: 'control-label'
+    .controls=f.select :chief_id , Chief.all.map{|a| [a.mname,a.id]}
+
+  =f.fields_for :user do |x|
+    .control-group
+      =x.label :name,nil,class: 'control-label'
+      .controls=x.text_field :name
+    .control-group
+      =x.label :email,nil,class: 'control-label'
+      .controls=x.email_field :email
+    .control-group
+      =x.label :password,nil,class: 'control-label'
+      .controls=x.password_field :password
+    .control-group
+      =x.label :password_confirmation,nil,class: 'control-label'
+      .controls=x.password_field :password_confirmation
+  .form-actions
+    = f.submit nil, :class => 'btn btn-primary'
+
+

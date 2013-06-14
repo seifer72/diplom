@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Dissertations:
+  = @stages_work.dissertations_id
+
+= link_to 'Edit', edit_stages_work_path(@stages_work)
+\|
+= link_to 'Back', stages_works_path

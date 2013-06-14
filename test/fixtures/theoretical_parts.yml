@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  stages_work_id: 1
+  content: MyString
+  time_start: 2013-01-21
+  time_end: 2013-01-21
+
+two:
+  stages_work_id: 1
+  content: MyString
+  time_start: 2013-01-21
+  time_end: 2013-01-21

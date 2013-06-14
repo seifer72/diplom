@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Academic work:
+  = @exam.academic_work_id
+%p
+  %b Disciplin name:
+  = @exam.disciplin_name
+%p
+  %b Time start:
+  = @exam.time_start
+%p
+  %b Time end:
+  = @exam.time_end
+%p
+  %b Report:
+  = @exam.report
+
+= link_to 'Edit', edit_exam_path(@exam)
+\|
+= link_to 'Back', exams_path

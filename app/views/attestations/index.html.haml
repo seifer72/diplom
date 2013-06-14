@@ -1,0 +1,27 @@
+%h1 Listing attestations
+
+%table
+  %tr
+    %th Content
+    %th Time start
+    %th Time end
+    %th Aspirant
+    %th Chief
+    %th
+    %th
+    %th
+
+  - @attestations.each do |attestation|
+    %tr
+      %td= attestation.content
+      %td= attestation.time_start
+      %td= attestation.time_end
+      %td= attestation.aspirant_id
+      %td= attestation.chief_id
+      %td= link_to 'Show', attestation
+      %td= link_to 'Edit', edit_attestation_path(attestation)
+      %td= link_to 'Destroy', attestation, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Attestation', new_attestation_path

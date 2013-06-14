@@ -1,0 +1,16 @@
+= form_for @explanatory_not do |f|
+  - if @explanatory_not.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@explanatory_not.errors.count, "error")} prohibited this explanatory_not from being saved:"
+      %ul
+        - @explanatory_not.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :aspirant_id
+    = f.text_field :aspirant_id
+  .field
+    = f.label :content
+    = f.text_field :content
+  .actions
+    = f.submit 'Save'

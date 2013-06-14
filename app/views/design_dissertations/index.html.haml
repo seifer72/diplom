@@ -1,0 +1,23 @@
+%h1 Listing design_dissertations
+
+%table
+  %tr
+    %th Dissertation
+    %th Content
+    %th Srok
+    %th
+    %th
+    %th
+
+  - @design_dissertations.each do |design_dissertation|
+    %tr
+      %td= design_dissertation.dissertation_id
+      %td= design_dissertation.content
+      %td= design_dissertation.srok
+      %td= link_to 'Show', design_dissertation
+      %td= link_to 'Edit', edit_design_dissertation_path(design_dissertation)
+      %td= link_to 'Destroy', design_dissertation, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Design dissertation', new_design_dissertation_path

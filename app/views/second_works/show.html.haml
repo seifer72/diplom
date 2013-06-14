@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Time start:
+  = @second_work.time_start
+%p
+  %b Time end:
+  = @second_work.time_end
+%p
+  %b Scientific work:
+  = @second_work.scientific_work_id
+%p
+  %b Report:
+  = @second_work.report
+%p
+  %b Work:
+  = @second_work.work
+
+= link_to 'Edit', edit_second_work_path(@second_work)
+\|
+= link_to 'Back', second_works_path

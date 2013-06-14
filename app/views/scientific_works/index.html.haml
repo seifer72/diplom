@@ -1,0 +1,19 @@
+%h1 Listing scientific_works
+
+%table
+  %tr
+    %th General plan
+    %th
+    %th
+    %th
+
+  - @scientific_works.each do |scientific_work|
+    %tr
+      %td= scientific_work.general_plan.aspirant.fname
+      %td= link_to 'Show', scientific_work
+      %td= link_to 'Edit', edit_scientific_work_path(scientific_work)
+      %td= link_to 'Destroy', scientific_work, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Scientific work', new_scientific_work_path

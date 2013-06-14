@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Aspirant:
+  = @explanatory_not.aspirant_id
+%p
+  %b Content:
+  = @explanatory_not.content
+
+= link_to 'Edit', edit_explanatory_not_path(@explanatory_not)
+\|
+= link_to 'Back', explanatory_nots_path

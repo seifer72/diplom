@@ -1,0 +1,19 @@
+
+%table.table.table-condensed.table-striped
+  %tr
+    %th  Дисциплины для обучения
+    %th  Экзамен
+    %th  Работу над дисертацией
+    %th  Предварительную защиту
+    %th  Представление дисертации
+    %th  Другие виды работ
+    %th
+      %tr
+        %td
+          %tr
+            %td=link_to 'Заполнить ', new_disciplines_study_path
+
+            %td=link_to 'Заполнить', new_work_dissertation_path
+            %td=link_to 'Заполнить ', new_defense_path
+            %td=link_to 'Заполнить', new_dissertation_represent_path
+            %td=link_to 'Заполнить ', new_work_dissertation_path

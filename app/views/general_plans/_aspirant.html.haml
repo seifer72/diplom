@@ -1,0 +1,180 @@
+%h1 Общий учебный план аспиранта
+=current_user.aspirant.chief.user.email
+-if current_user.aspirant.general_plan.check_status_0?
+  %oi.badge= 'Не отправлен'
+  =link_to "Отправить на проверку", send_1_path
+-if current_user.aspirant.general_plan.check_status_1?
+  %oi.badge.badge-info= 'В ожидание проверки'
+-if current_user.aspirant.general_plan.check_status_2?
+  %oi.badge.badge-warning= 'На доработку'
+  =link_to "Отправить на проверку", send_1_path
+-if current_user.aspirant.general_plan.check_status_3?
+  %oi.badge.badge-success= 'Проверен'
+
+
+=link_to "PDF",general_plans_path(:format=>'pdf'),:class=>"btn"
+
+%h3 Учебная работа
+
+%table.table.table-bordered.table-hover
+  %tr
+    %th Наименование работы
+    %th Дата начала
+    %th Дата окончания
+    %th Форма отчетности
+    %th Действие
+    - @academic_work = current_user.aspirant.general_plan.academic_work
+
+
+  - current_user.aspirant.general_plan.academic_work.exams.each do |x|
+
+    -if x.present?
+      %tr
+        %td=x.disciplin_name
+        %td=x.time_start
+        %td=x.time_end
+        %td=x.report
+        %td
+          .btn-group
+            = link_to 'Редактирование', edit_exam_path(x), :class => 'btn btn-mini btn-info'
+
+            %button.btn.btn-mini.btn-info.dropdown-toggle(data-toggle="dropdown")
+              %span.caret
+            %ul.dropdown-menu
+              %li= link_to 'Удалить', x, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn"
+
+
+  =link_to 'Добавить пункт в учебную работу ', new_academic_work_exam_path(@academic_work), :class => "btn"  ,:style=>"margin: 0 0 5px 0"
+
+%h3 Дисциплины для изучения
+%table.table.table-bordered.table-hover
+  %tr
+    %th Наименование работы
+    %th Дата начала
+    %th Дата окончания
+    %th Форма отчетности
+    %th Действие
+
+    - @academic_work = current_user.aspirant.general_plan.academic_work
+    =link_to 'Добавить пунк в дисциплины для изучения',new_academic_work_disciplines_studies_path(@academic_work)  ,:class => "btn",:style=>"margin: 0 0 5px 0"
+
+  -current_user.aspirant.general_plan.academic_work.disciplines_studies.each do |x|
+    -if x.present?
+      %tr
+        %td=x.disciplin_name
+        %td=x.time_start
+        %td=x.time_end
+        %td=x.report
+        %td
+          .btn-group
+            = link_to "Редактирование",edit_disciplines_study_path(x) ,:class=>'btn btn-mini btn-info'
+            %button.btn.btn-mini.btn-info.dropdown-toggle(data-toggle="dropdown")
+              %span.caret
+            %ul.dropdown-menu
+              %li= link_to 'Удалить', x, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn"
+%h3 Научная работа
+%h6 Работа над дисертацией
+%table.table.table-bordered.table-hover
+  %tr
+    %th Наименование работы
+    %th Дата начала
+    %th Дата окончания
+    %th Форма отчетности
+    %th Действие
+
+    - @scientific_work = current_user.aspirant.general_plan.scientific_work
+    =link_to 'Добавить пункт в работу над дисертацией',new_scientific_work_work_dissertation_path(@scientific_work) ,:class => "btn"  ,:style=>"margin: 0 0 5px 0"
+
+
+
+  -current_user.aspirant.general_plan.scientific_work.work_dissertations.each do |v|
+
+    %tr
+      %td=v.work
+      %td=v.time_start
+      %td=v.time_end
+      %td=v.report
+      %td
+        .btn-group
+          = link_to "Редактировать",edit_work_dissertation_path(v)  ,:class=>'btn btn-mini btn-info'
+          %button.btn.btn-mini.btn-info.dropdown-toggle(data-toggle="dropdown")
+            %span.caret
+          %ul.dropdown-menu
+            = link_to 'Удалить', v, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn"
+
+%h3 Предварительная защита научной работы
+%table.table.table-bordered.table-hover
+  %tr
+    %th Дата начала
+    %th Дата окончания
+    %th Форма отчетности
+    %th Действие
+
+    - @scientific_work = current_user.aspirant.general_plan.scientific_work
+    =link_to 'Заполнить',new_scientific_work_defense_path(@scientific_work),:class => "btn"   ,:style=>"margin: 0 0 5px 0"
+
+  -current_user.aspirant.general_plan.scientific_work.defense.each do |x|
+    %tr
+      %td=x.time_start
+      %td=x.time_end
+      %td=x.report
+      %td
+        .btn-group
+          = link_to 'Редактировать',edit_defense_path(x) ,:class=>'btn btn-mini btn-info',:style=>"width: 80%"
+          %button.btn.btn-mini.btn-info.dropdown-toggle(data-toggle="dropdown")
+            %span.caret
+          %ul.dropdown-menu
+            = link_to 'Удалить', x, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn"
+%h3 Представление диссертации в ученый совет
+%table.table.table-bordered.table-hover
+  %tr
+    %th Дата начала
+    %th Дата окончания
+    %th Форма отчетности
+    %th Действие
+
+    - @scientific_work = current_user.aspirant.general_plan.scientific_work
+    =link_to 'Заполнить',new_scientific_work_dissertation_represent_path(@scientific_work),:class => "btn",:style=>"margin: 0 0 5px 0"
+
+  -current_user.aspirant.general_plan.scientific_work.dissertation_represents.each do |x|
+    %tr
+      %td=x.time_start
+      %td=x.time_end
+      %td=x.report
+      %td
+        .btn-group
+          = link_to 'Редактировать',edit_dissertation_represent_path(x),:class=>'btn btn-mini btn-info',:style=>"width: 80%"
+          %button.btn.btn-mini.btn-info.dropdown-toggle(data-toggle="dropdown")
+            %span.caret
+          %ul.dropdown-menu
+            = link_to 'Удалить', x, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn"
+
+%h3 Другие виды работ
+%table.table.table-bordered.table-hover
+  %tr
+    %th Наименование работы
+    %th Дата начала
+    %th Дата окончания
+    %th Форма отчетности
+    %th Действие
+
+    - @scientific_work = current_user.aspirant.general_plan.scientific_work
+    =link_to 'Заполнить',new_scientific_work_second_work_path(@scientific_work),:class => "btn"  ,:style=>"margin: 0 0 5px 0"
+
+
+  -current_user.aspirant.general_plan.scientific_work.second_works.each do |x|
+    %tr
+      %td=x.work
+      %td=x.time_start
+      %td=x.time_end
+      %td=x.report
+      %td
+        .btn-group
+          =link_to 'Редактировать',edit_second_work_path(x),:class=>'btn btn-mini btn-info' ,:style=>"width: 73%"
+          %button.btn.btn-mini.btn-info.dropdown-toggle(data-toggle="dropdown")
+            %span.caret
+          %ul.dropdown-menu
+            = link_to 'Удалить', x, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn"
+
+%br
+

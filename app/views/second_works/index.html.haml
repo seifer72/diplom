@@ -1,0 +1,27 @@
+%h1 Listing second_works
+
+%table
+  %tr
+    %th Time start
+    %th Time end
+    %th Scientific work
+    %th Report
+    %th Work
+    %th
+    %th
+    %th
+
+  - @second_works.each do |second_work|
+    %tr
+      %td= second_work.time_start
+      %td= second_work.time_end
+      %td= second_work.scientific_work_id
+      %td= second_work.report
+      %td= second_work.work
+      %td= link_to 'Show', second_work
+      %td= link_to 'Edit', edit_second_work_path(second_work)
+      %td= link_to 'Destroy', second_work, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Second work', new_second_work_path

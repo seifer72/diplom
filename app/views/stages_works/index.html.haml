@@ -1,0 +1,19 @@
+%h1 Listing stages_works
+
+%table
+  %tr
+    %th Dissertations
+    %th
+    %th
+    %th
+
+  - @stages_works.each do |stages_work|
+    %tr
+      %td= stages_work.dissertations_id
+      %td= link_to 'Show', stages_work
+      %td= link_to 'Edit', edit_stages_work_path(stages_work)
+      %td= link_to 'Destroy', stages_work, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Stages work', new_stages_work_path

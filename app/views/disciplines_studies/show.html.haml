@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Academic work:
+  = @disciplines_study.academic_work_id
+%p
+  %b Disciplin name:
+  = @disciplines_study.disciplin_name
+%p
+  %b Time start:
+  = @disciplines_study.time_start
+%p
+  %b Time end:
+  = @disciplines_study.time_end
+%p
+  %b Report:
+  = @disciplines_study.report
+
+= link_to 'Edit', edit_disciplines_study_path(@disciplines_study)
+\|
+= link_to 'Back', disciplines_studies_path

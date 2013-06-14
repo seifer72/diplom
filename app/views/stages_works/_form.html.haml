@@ -1,0 +1,13 @@
+= form_for @stages_work do |f|
+  - if @stages_work.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@stages_work.errors.count, "error")} prohibited this stages_work from being saved:"
+      %ul
+        - @stages_work.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :dissertations_id
+    = f.number_field :dissertations_id
+  .actions
+    = f.submit 'Save'

@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Stages work:
+  = @experiment.stages_work_id
+%p
+  %b Content:
+  = @experiment.content
+%p
+  %b Time start:
+  = @experiment.time_start
+%p
+  %b Time end:
+  = @experiment.time_end
+
+= link_to 'Edit', edit_experiment_path(@experiment)
+\|
+= link_to 'Back', experiments_path

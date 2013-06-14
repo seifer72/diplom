@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  time_start: 2013-01-19
+  time_end: 2013-01-19
+  plan: 1
+  fact: 1
+  work_plan_id: 1
+
+two:
+  name: MyString
+  time_start: 2013-01-19
+  time_end: 2013-01-19
+  plan: 1
+  fact: 1
+  work_plan_id: 1

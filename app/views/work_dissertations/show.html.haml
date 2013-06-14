@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Work:
+  = @work_dissertation.work
+%p
+  %b Time start:
+  = @work_dissertation.time_start
+%p
+  %b Time end:
+  = @work_dissertation.time_end
+%p
+  %b Report:
+  = @work_dissertation.report
+%p
+  %b Scientific work:
+  = @work_dissertation.scientific_work_id
+
+= link_to 'Edit', edit_work_dissertation_path(@work_dissertation)
+\|
+= link_to 'Back', work_dissertations_path

@@ -1,0 +1,21 @@
+%h1 Listing explanatory_nots
+
+%table
+  %tr
+    %th Aspirant
+    %th Content
+    %th
+    %th
+    %th
+
+  - @explanatory_nots.each do |explanatory_not|
+    %tr
+      %td= explanatory_not.aspirant_id
+      %td= explanatory_not.content
+      %td= link_to 'Show', explanatory_not
+      %td= link_to 'Edit', edit_explanatory_not_path(explanatory_not)
+      %td= link_to 'Destroy', explanatory_not, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Explanatory not', new_explanatory_not_path

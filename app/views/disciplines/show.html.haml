@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @discipline.name
+%p
+  %b Time start:
+  = @discipline.time_start
+%p
+  %b Time end:
+  = @discipline.time_end
+%p
+  %b Plan:
+  = @discipline.plan
+%p
+  %b Fact:
+  = @discipline.fact
+%p
+  %b Work plan:
+  = @discipline.work_plan_id
+
+= link_to 'Edit', edit_discipline_path(@discipline)
+\|
+= link_to 'Back', disciplines_path

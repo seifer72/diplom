@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Time start:
+  = @defense.time_start
+%p
+  %b Time end:
+  = @defense.time_end
+%p
+  %b Scientific work:
+  = @defense.scientific_work_id
+%p
+  %b Report:
+  = @defense.report
+
+= link_to 'Edit', edit_defense_path(@defense)
+\|
+= link_to 'Back', defenses_path

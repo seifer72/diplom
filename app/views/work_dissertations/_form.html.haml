@@ -1,0 +1,22 @@
+= form_for [@scientific_work,@work_dissertation] do |f|
+  - if @work_dissertation.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@work_dissertation.errors.count, "error")} prohibited this work_dissertation from being saved:"
+      %ul
+        - @work_dissertation.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :work
+    = f.text_field :work
+  .field
+    = f.label :time_start
+    = f.date_select :time_start
+  .field
+    = f.label :time_end
+    = f.date_select :time_end
+  .field
+    = f.label :report
+    = f.text_area :report,:size => "30x5"
+  .actions
+    = f.submit 'Сохранить'

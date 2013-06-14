@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Generalplan:
+  = @academic_work.general_plan_id
+
+= link_to 'Edit', edit_academic_work_path(@academic_work)
+\|
+= link_to 'Back', academic_works_path

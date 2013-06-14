@@ -1,0 +1,26 @@
+= form_for [@work_plan,@candidate] do |f|
+  - if @candidate.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@candidate.errors.count, "error")} prohibited this candidate from being saved:"
+      %ul
+        - @candidate.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :time_start
+    = f.date_select :time_start
+  .field
+    = f.label :time_end
+    = f.date_select :time_end
+  .field
+    = f.label :plan
+    = f.text_field :plan
+  .field
+    = f.label :fact
+    = f.text_field :fact
+
+  .actions
+    = f.submit 'Сохранить'

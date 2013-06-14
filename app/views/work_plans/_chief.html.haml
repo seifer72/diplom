@@ -1,0 +1,46 @@
+
+%table.table.table-bordered.table-hover
+  %tr
+    %th Фамилия
+    %th Имя
+    %th Отчество
+    %th Период от
+    %th До
+    %th Статус
+  -current_user.chief.aspirant.each do |x|
+    -x.work_plan.each do |v|
+      -if v.check_status_11?
+        %tr
+          %td=x.sname
+          %td=x.fname
+          %td=x.mname
+          %td=l v.per_start, :format=> :long
+          %td=l v.per_end, :format=>:long
+          %td=link_to "В ожидание проверки",work_plan_path(v), :class => 'btn btn-mini btn-info'
+
+      -if v.check_status_22?
+        %tr
+          %td=x.sname
+          %td=x.fname
+          %td=x.mname
+          %td=l v.per_start, :format=> :long
+          %td=l v.per_end, :format=>:long
+          %td=link_to "На доработку",work_plan_path(v), :class => 'btn btn-mini btn-warning'
+      -if v.check_status_33?
+        %tr
+          %td=x.sname
+          %td=x.fname
+          %td=x.mname
+          %td=l v.per_start, :format=> :long
+          %td=l v.per_end, :format=>:long
+          %td=link_to "Принят",work_plan_path(v), :class => 'btn btn-mini btn-success'
+      -if v.check_status_00?
+        %tr
+          %td=x.sname
+          %td=x.fname
+          %td=x.mname
+          %td=l v.per_start, :format=> :long
+          %td=l v.per_end, :format=>:long
+          %td=link_to "Не отправлен",work_plan_path(v), :class => 'btn btn-mini btn-inverse'
+
+

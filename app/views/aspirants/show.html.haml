@@ -1,0 +1,48 @@
+- model_class = Aspirant
+.page-header
+  %h1=t '.title', :default => model_class.model_name.human
+
+%p
+  %strong= model_class.human_attribute_name(:fname) + ':'
+  %br
+  = @aspirant.fname
+%p
+  %strong= model_class.human_attribute_name(:sname) + ':'
+  %br
+  = @aspirant.sname
+%p
+  %strong= model_class.human_attribute_name(:mname) + ':'
+  %br
+  = @aspirant.mname
+%p
+  %strong= model_class.human_attribute_name(:cathedra) + ':'
+  %br
+  = @aspirant.cathedra
+%p
+  %strong= model_class.human_attribute_name(:index) + ':'
+  %br
+  = @aspirant.index
+%p
+  %strong= model_class.human_attribute_name(:time_start) + ':'
+  %br
+  = @aspirant.time_start
+%p
+  %strong= model_class.human_attribute_name(:time_end) + ':'
+  %br
+  = @aspirant.time_end
+%p
+  %strong= model_class.human_attribute_name(:specialty) + ':'
+  %br
+  = @aspirant.specialty
+%p
+  %strong= model_class.human_attribute_name(:direction) + ':'
+  %br
+  = @aspirant.direction
+%p
+  %strong= model_class.human_attribute_name(:theme) + ':'
+  %br
+  = @aspirant.theme
+
+.form-actions
+  = link_to "Редактировать", edit_aspirant_path(@aspirant), :class => 'btn'
+  = link_to "Удалить", aspirant_path(@aspirant), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Вы точно желаете удалить?')) }, :class => 'btn btn-danger'

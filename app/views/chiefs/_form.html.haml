@@ -1,0 +1,35 @@
+= form_for @chief do |f|
+  - if @chief.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@chief.errors.count, "error")} prohibited this chief from being saved:"
+      %ul
+        - @chief.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :fname
+    = f.text_field :fname
+  .field
+    = f.label :sname
+    = f.text_field :sname
+  .field
+    = f.label :mname
+    = f.text_field :mname
+  .field
+    = f.label :title
+    = f.text_field :title
+  =f.fields_for :user do |x|
+    .control-group
+      =x.label :name,nil,class: 'control-label'
+      .controls=x.text_field :name
+    .control-group
+      =x.label :email,nil,class: 'control-label'
+      .controls=x.email_field :email
+    .control-group
+      =x.label :password,nil,class: 'control-label'
+      .controls=x.password_field :password
+    .control-group
+      =x.label :password_confirmation,nil,class: 'control-label'
+      .controls=x.password_field :password_confirmation
+  .actions
+    = f.submit 'Создать'

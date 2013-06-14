@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @scientific_works_for_plan.name
+%p
+  %b Time start:
+  = @scientific_works_for_plan.time_start
+%p
+  %b Time end:
+  = @scientific_works_for_plan.time_end
+%p
+  %b Plan:
+  = @scientific_works_for_plan.plan
+%p
+  %b Fact:
+  = @scientific_works_for_plan.fact
+%p
+  %b Work plan:
+  = @scientific_works_for_plan.work_plan_id
+
+= link_to 'Edit', edit_scientific_works_for_plan_path(@scientific_works_for_plan)
+\|
+= link_to 'Back', scientific_works_for_plans_path

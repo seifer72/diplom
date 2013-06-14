@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  time_start: 2013-01-19
+  time_end: 2013-01-19
+  scientific_work_id: 1
+  report: MyString
+  work: MyString
+
+two:
+  time_start: 2013-01-19
+  time_end: 2013-01-19
+  scientific_work_id: 1
+  report: MyString
+  work: MyString

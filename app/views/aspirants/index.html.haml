@@ -1,0 +1,5 @@
+%h1 Cписок аспирантов
+-if current_user.chief?
+  =render 'chief'
+-if current_user.worker?
+  =render 'worker'

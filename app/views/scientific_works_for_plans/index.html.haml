@@ -1,0 +1,29 @@
+%h1 Listing scientific_works_for_plans
+
+%table
+  %tr
+    %th Name
+    %th Time start
+    %th Time end
+    %th Plan
+    %th Fact
+    %th Work plan
+    %th
+    %th
+    %th
+
+  - @scientific_works_for_plans.each do |scientific_works_for_plan|
+    %tr
+      %td= scientific_works_for_plan.name
+      %td= scientific_works_for_plan.time_start
+      %td= scientific_works_for_plan.time_end
+      %td= scientific_works_for_plan.plan
+      %td= scientific_works_for_plan.fact
+      %td= scientific_works_for_plan.work_plan_id
+      %td= link_to 'Show', scientific_works_for_plan
+      %td= link_to 'Edit', edit_scientific_works_for_plan_path(scientific_works_for_plan)
+      %td= link_to 'Destroy', scientific_works_for_plan, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Scientific works for plan', new_scientific_works_for_plan_path

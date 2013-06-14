@@ -1,0 +1,36 @@
+%h1 Общие учебные планы на утверждение
+
+%table.table.table-bordered.table-hover
+  %tr
+    %th Фамилия
+    %th Имя
+    %th Отчество
+    %th Общий учебный план
+  -current_user.chief.aspirant.each do |v|
+    -if v.general_plan.check_status_1?
+      %tr
+        %td=v.sname
+        %td=v.fname
+        %td=v.mname
+        %td=link_to "В ожидание проверки",general_plan_path(v), :class => 'btn btn-mini btn-info'
+
+    -if v.general_plan.check_status_2?
+      %tr
+        %td=v.sname
+        %td=v.fname
+        %td=v.mname
+        %td=link_to "На доработку",general_plan_path(v), :class => 'btn btn-mini btn-warning'
+    -if v.general_plan.check_status_3?
+      %tr
+        %td=v.sname
+        %td=v.fname
+        %td=v.mname
+        %td=link_to "Принят",general_plan_path(v), :class => 'btn btn-mini btn-success'
+    -if v.general_plan.check_status_0?
+      %tr
+        %td=v.sname
+        %td=v.fname
+        %td=v.mname
+        %td=link_to "Не отправлен",general_plan_path(v), :class => 'btn btn-mini btn-inverse'
+
+

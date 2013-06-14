@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Introduction result:
+  = @main_stage.introduction_result_id
+%p
+  %b Content:
+  = @main_stage.content
+%p
+  %b Time start:
+  = @main_stage.time_start
+%p
+  %b Time end:
+  = @main_stage.time_end
+
+= link_to 'Edit', edit_main_stage_path(@main_stage)
+\|
+= link_to 'Back', main_stages_path

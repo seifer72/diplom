@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Fname:
+  = @chief.fname
+%p
+  %b Sname:
+  = @chief.sname
+%p
+  %b Mname:
+  = @chief.mname
+%p
+  %b Aspirant:
+  = @chief.aspirant_id
+%p
+  %b Title:
+  = @chief.title
+
+= link_to 'Edit', edit_chief_path(@chief)
+\|
+= link_to 'Back', chiefs_path

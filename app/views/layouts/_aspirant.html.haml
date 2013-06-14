@@ -1,0 +1,8 @@
+.well.sidebar-nav
+  %ul.nav.nav-list
+    -@general_plan=current_user.aspirant.general_plan
+    %li=link_to 'Рабочие учебные планы',work_plans_path
+    %li=link_to 'Общий учебный план',general_plan_path(@general_plan)
+
+
+
