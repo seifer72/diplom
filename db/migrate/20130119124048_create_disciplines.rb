@@ -5,8 +5,8 @@ class CreateDisciplines < ActiveRecord::Migration
       t.string :name
       t.date :time_start
       t.date :time_end
-      t.integer :plan
-      t.integer :fact
+      t.string :plan
+      t.string :fact
       t.integer :work_plan_id
 
       t.timestamps

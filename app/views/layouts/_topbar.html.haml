@@ -3,7 +3,6 @@
 .container.nav-collapse
   %ul.nav.pull-right
     -if logged_in?
-      %li.test=current_user.name
 
       %li.test.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
         = current_user.human_role

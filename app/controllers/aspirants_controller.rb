@@ -26,6 +26,7 @@ class AspirantsController < ApplicationController
   # GET /aspirants/new
   # GET /aspirants/new.json
   def new
+    @chief=Chief.all
     @aspirant = Aspirant.new
     @aspirant.build_user
     respond_to do |format|

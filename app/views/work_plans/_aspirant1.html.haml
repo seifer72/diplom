@@ -23,8 +23,8 @@
     %th Наименование работы
     %th Дата начала
     %th Дата окончания
-    %th По плану
-    %th Фактически
+    %th Форма Отчетности
+    %th Оценка
     %th Действие
 
     -@work_plan.candidate.each do |x|
@@ -51,8 +51,8 @@
     %th Наименование работы
     %th Дата начала
     %th Дата окончания
-    %th По плану
-    %th Фактически
+    %th Форма Отчетности
+    %th Оценка
     %th Действие
     -@work_plan.discipline.each do |x|
       %tr
@@ -69,15 +69,15 @@
               %span.caret
             %ul.dropdown-menu
               %li= link_to 'Удалить', x, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn"
-  =link_to 'Заполнить ', new_work_plan_discipline_path(@work_plan), :class => "btn" ,:style=>"margin: 0 0 5px 0"
+  =link_to 'Добавить пункт в дисциплины для изучения ', new_work_plan_discipline_path(@work_plan), :class => "btn" ,:style=>"margin: 0 0 5px 0"
 %h3 Научная работа
 %table.table.table-bordered.table-hover
   %tr
     %th Наименование работы
     %th Дата начала
     %th Дата окончания
-    %th По плану
-    %th Фактически
+    %th Форма Отчетности
+    %th Оценка
     %th Действие
     -@work_plan.scientific_works_for_plan.each do |x|
       %tr
@@ -94,5 +94,5 @@
               %span.caret
             %ul.dropdown-menu
               %li= link_to 'Удалить', x, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn"
-  =link_to 'Заполнить ', new_work_plan_scientific_works_for_plan_path(@work_plan), :class => "btn" ,:style=>"margin: 0 0 5px 0"
+  =link_to 'Добавить пункт в научную работу ', new_work_plan_scientific_works_for_plan_path(@work_plan), :class => "btn" ,:style=>"margin: 0 0 5px 0"
 %br

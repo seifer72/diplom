@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(:version => 20130121110908) do
     t.string   "mname"
     t.string   "cathedra"
     t.integer  "chief_id"
-    t.integer  "index"
+    t.string   "index"
     t.date     "time_start"
     t.date     "time_end"
     t.string   "specialty"
@@ -63,8 +63,8 @@ ActiveRecord::Schema.define(:version => 20130121110908) do
     t.string   "name"
     t.date     "time_start"
     t.date     "time_end"
-    t.integer  "plan"
-    t.integer  "fact"
+    t.string   "plan"
+    t.string   "fact"
     t.integer  "work_plan_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
@@ -100,8 +100,8 @@ ActiveRecord::Schema.define(:version => 20130121110908) do
     t.string   "name"
     t.date     "time_start"
     t.date     "time_end"
-    t.integer  "plan"
-    t.integer  "fact"
+    t.string   "plan"
+    t.string   "fact"
     t.integer  "work_plan_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
@@ -201,8 +201,8 @@ ActiveRecord::Schema.define(:version => 20130121110908) do
     t.string   "name"
     t.date     "time_start"
     t.date     "time_end"
-    t.integer  "plan"
-    t.integer  "fact"
+    t.string   "plan"
+    t.string   "fact"
     t.integer  "work_plan_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false

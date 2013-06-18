@@ -6,29 +6,37 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/chiefs_controller.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370784662037" ignored="false" />
     <file path="$USER_HOME$/filmbase/config/environments/development.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370784194784" ignored="false" />
-    <file path="/Dummy.txt" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370783098896" ignored="false" />
-    <file path="/_form.html.haml" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370779123862" ignored="false" />
-    <file path="/aspirants_controller.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370777642903" ignored="false" />
+    <file path="/Dummy.txt" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371585971412" ignored="false" />
+    <file path="/_form.html.haml" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371494515620" ignored="false" />
+    <file path="/aspirants_controller.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371490445547" ignored="false" />
     <file path="/chief.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370778579826" ignored="false" />
-    <file path="/_worker.html.haml" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370776764457" ignored="false" />
+    <file path="/_worker.html.haml" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371460455879" ignored="false" />
     <file path="/application_helper.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370718780981" ignored="false" />
-    <file path="/_aspirant1.html.haml" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370715865705" ignored="false" />
+    <file path="/_aspirant1.html.haml" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371466627465" ignored="false" />
     <file path="/show.html.haml" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370713962768" ignored="false" />
     <file path="/work_plan.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370714623192" ignored="false" />
     <file path="/20130119122045_create_work_plans.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370712925671" ignored="false" />
     <file path="/work_plans_controller.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370780211652" ignored="false" />
     <file path="/_chief1.html.haml" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370776012649" ignored="false" />
-    <file path="/_aspirant.html.haml" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370783724014" ignored="false" />
+    <file path="/_aspirant.html.haml" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371586653561" ignored="false" />
     <file path="/_chief.html.haml" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370719601681" ignored="false" />
-    <file path="/routes.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370715725671" ignored="false" />
+    <file path="/routes.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371586371679" ignored="false" />
     <file path="/aspirant.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370778857914" ignored="false" />
     <file path="/general_plan.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370700893172" ignored="false" />
-    <file path="/seeds.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370698832804" ignored="false" />
+    <file path="/seeds.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371462729215" ignored="false" />
     <file path="/20130119111004_create_general_plans.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370698651286" ignored="false" />
-    <file path="/index.pdf.prawn" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370698590148" ignored="false" />
-    <file path="/general_plans_controller.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370783737026" ignored="false" />
+    <file path="/index.pdf.prawn" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371592035046" ignored="false" />
+    <file path="/general_plans_controller.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371586428863" ignored="false" />
     <file path="/Gemfile" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370697551716" ignored="false" />
     <file path="/index.html.haml" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1370776637503" ignored="false" />
+    <file path="/ru.yml" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371460529069" ignored="false" />
+    <file path="/20130119102245_create_aspirants.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371462047408" ignored="false" />
+    <file path="/schema.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371462068545" ignored="false" />
+    <file path="/_topbar.html.haml" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371464771087" ignored="false" />
+    <file path="/20130119123701_create_candidates.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371466534095" ignored="false" />
+    <file path="/20130119124048_create_disciplines.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371466560650" ignored="false" />
+    <file path="/20130119122544_create_scientific_works_for_plans.rb" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371466585271" ignored="false" />
+    <file path="/edit.html.haml" changelist="e96d7e27-d249-4c39-9760-6b9534867e19" time="1371492124772" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,55 +56,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/general_plans/index.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="work_plans_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/work_plans_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="40" selection-start="2586" selection-end="2586" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_chief.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/work_plans/_chief.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_chief1.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/work_plans/_chief1.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_aspirant.html.haml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="_aspirant.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/general_plans/_aspirant.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="23" selection-start="3860" selection-end="3860" vertical-scroll-proportion="1.2429057">
+            <state line="163" column="83" selection-start="5881" selection-end="5956" vertical-scroll-proportion="-22.958334">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_chief1.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/general_plans/_chief1.html.haml">
+      <file leaf-file-name="index.pdf.prawn" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/general_plans/index.pdf.prawn">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="27.666666">
+            <state line="58" column="69" selection-start="3899" selection-end="3899" vertical-scroll-proportion="0.95027626">
               <folding />
             </state>
           </provider>
@@ -112,22 +84,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/aspirants/_chief.html.haml" />
-        <option value="$PROJECT_DIR$/app/models/chief.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130119123701_create_candidates.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130119124048_create_disciplines.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130119122544_create_scientific_works_for_plans.rb" />
+        <option value="$PROJECT_DIR$/app/views/work_plans/_aspirant1.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/disciplines/_form.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/aspirants_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/exams/edit.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_topbar.html.haml" />
         <option value="$PROJECT_DIR$/app/views/aspirants/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/models/aspirant.rb" />
-        <option value="$PROJECT_DIR$/app/views/general_plans/_chief1.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/user_mailer/welcome_email.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/general_plans_controller.rb" />
-        <option value="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
-        <option value="$PROJECT_DIR$/config/environments/development.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/chiefs_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/work_plans/_aspirant.html.haml" />
         <option value="$PROJECT_DIR$/app/views/general_plans/_aspirant.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/general_plans/_chief.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/work_plans/_chief.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/work_plans_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/work_plans/_chief1.html.haml" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/general_plans_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/general_plans/index.pdf.prawn" />
       </list>
     </option>
   </component>
@@ -169,12 +141,12 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
           <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rts2Diplom" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -207,6 +179,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rts2Diplom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diplom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rts2Diplom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diplom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="locales" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rts2Diplom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diplom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work_plans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rts2Diplom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diplom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -233,7 +273,95 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rts2Diplom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diplom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="general_plans" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rts2Diplom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diplom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="exams" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rts2Diplom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diplom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="disciplines" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rts2Diplom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="diplom1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aspirants" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -289,12 +417,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
+      <pane id="RailsProjectView">
+        <subPane>
           <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rts2Diplom" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -304,7 +432,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$USER_HOME$/filmbase" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../equipment-system-master" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -592,7 +720,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.49713057" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16595517" sideWeight="0.67266184" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17075774" sideWeight="0.67266184" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3421808" sideWeight="0.32712767" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933334" sideWeight="0.4978479" order="7" side_tool="true" content_ui="tabs" />
@@ -670,63 +798,56 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/chiefs_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/aspirants_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="43" selection-start="1424" selection-end="1424" vertical-scroll-proportion="0.560166" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/general_plans_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="48" selection-start="2503" selection-end="2503" vertical-scroll-proportion="1.0328542">
+        <state line="28" column="20" selection-start="618" selection-end="618" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/chiefs/_form.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="2" selection-start="365" selection-end="365" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/exams/index.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/aspirant.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/exams/edit.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="0" selection-start="730" selection-end="730" vertical-scroll-proportion="0.63380283" />
+        <state line="3" column="118" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/work_plans/index.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/work_plans/_chief1.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="8" column="49" selection-start="300" selection-end="315" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/work_plans/_aspirant.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_topbar.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="25" selection-start="137" selection-end="137" vertical-scroll-proportion="0.32352942" />
+        <state line="30" column="158" selection-start="1155" selection-end="1155" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/work_plans/_aspirant1.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/aspirants/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.17307693" />
+        <state line="43" column="85" selection-start="1587" selection-end="1587" vertical-scroll-proportion="0.56344587">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/general_plans/_chief.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/work_plans/_chief.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/exams/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/work_dissertations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.382353">
           <folding />
         </state>
       </provider>
@@ -738,30 +859,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/work_plans_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/work_plans/_aspirant1.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="40" selection-start="2586" selection-end="2586" vertical-scroll-proportion="0.0">
+        <state line="57" column="144" selection-start="1721" selection-end="1721" vertical-scroll-proportion="0.2167991">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/work_plans/_chief1.html.haml">
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="18" column="143" selection-start="924" selection-end="924" vertical-scroll-proportion="0.075112104">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/general_plans/_chief1.html.haml">
+    <entry file="file://$PROJECT_DIR$/app/views/aspirants/_worker.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="27.666666">
+        <state line="11" column="15" selection-start="195" selection-end="195" vertical-scroll-proportion="0.18728717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="28" selection-start="1070" selection-end="1070" vertical-scroll-proportion="0.7955801">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/general_plans_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="0" selection-start="2947" selection-end="2947" vertical-scroll-proportion="0.8674033">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/general_plans/_aspirant.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="23" selection-start="3860" selection-end="3860" vertical-scroll-proportion="1.2429057">
+        <state line="163" column="83" selection-start="5881" selection-end="5956" vertical-scroll-proportion="-22.958334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/general_plans/index.pdf.prawn">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="69" selection-start="3899" selection-end="3899" vertical-scroll-proportion="0.95027626">
           <folding />
         </state>
       </provider>

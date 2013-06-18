@@ -269,7 +269,7 @@ ru:
         sname: "Фамилия"
         mname: "Отчество"
         cathedra: "Отделение"
-        index: "Индекс"
+        index: "Кафедра"
         time_start: "Поступление"
         time_end: "Окончание"
         specialty: "Специальность"

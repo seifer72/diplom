@@ -1,5 +1,4 @@
 %h1 Общий учебный план аспиранта
-=current_user.aspirant.chief.user.email
 -if current_user.aspirant.general_plan.check_status_0?
   %oi.badge= 'Не отправлен'
   =link_to "Отправить на проверку", send_1_path
@@ -31,8 +30,8 @@
     -if x.present?
       %tr
         %td=x.disciplin_name
-        %td=x.time_start
-        %td=x.time_end
+        %td=l x.time_start,:format=>:long
+        %td=l x.time_end ,:format=>:long
         %td=x.report
         %td
           .btn-group
@@ -56,14 +55,14 @@
     %th Действие
 
     - @academic_work = current_user.aspirant.general_plan.academic_work
-    =link_to 'Добавить пунк в дисциплины для изучения',new_academic_work_disciplines_studies_path(@academic_work)  ,:class => "btn",:style=>"margin: 0 0 5px 0"
+    =link_to 'Добавить пункт в дисциплины для изучения',new_academic_work_disciplines_studies_path(@academic_work)  ,:class => "btn",:style=>"margin: 0 0 5px 0"
 
   -current_user.aspirant.general_plan.academic_work.disciplines_studies.each do |x|
     -if x.present?
       %tr
         %td=x.disciplin_name
-        %td=x.time_start
-        %td=x.time_end
+        %td=l x.time_start,:format=>:long
+        %td=l x.time_end,:format=>:long
         %td=x.report
         %td
           .btn-group
@@ -91,8 +90,8 @@
 
     %tr
       %td=v.work
-      %td=v.time_start
-      %td=v.time_end
+      %td=l v.time_start ,:format=>:long
+      %td=l v.time_end,:format=>:long
       %td=v.report
       %td
         .btn-group

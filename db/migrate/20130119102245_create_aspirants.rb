@@ -7,7 +7,7 @@ class CreateAspirants < ActiveRecord::Migration
       t.string :mname
       t.string :cathedra
       t.integer :chief_id
-      t.integer :index
+      t.string :index
       t.date :time_start
       t.date :time_end
       t.string :specialty
