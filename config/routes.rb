@@ -80,18 +80,18 @@ Rts2Diplom::Application.routes.draw do
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
-  match 'logout' => 'sessions#destroy', :as => :logout
-  match 'set_role_adm' => 'users#set_role_adm'
-  match 'set_role_work' => 'users#set_role_work'
-  match 'set_role_asp' => 'users#set_role_asp'
-  match 'set_role_chief' => 'users#set_role_chief'
+  get 'logout' => 'sessions#destroy', :as => :logout
+  get 'set_role_adm' => 'users#set_role_adm'
+  get 'set_role_work' => 'users#set_role_work'
+  get 'set_role_asp' => 'users#set_role_asp'
+  get 'set_role_chief' => 'users#set_role_chief'
 
-  match 'send_1'=>'general_plans#send_1'
-  match 'send_w1/:id'=>'work_plans#send_w1',:as=>"work_plan_send1"
-  match 'send_2/:id'=>'general_plans#send_2',:as=>'general_plan_send2'
-  match 'send_3/:id'=>'general_plans#send_3',:as=>'general_plan_send3'
-  match 'send_w2/:id'=>'work_plans#send_w2',:as=>'work_plan_send2'
-  match 'send_w3/:id'=>'work_plans#send_w3',:as=>'work_plan_send3'
+  get 'send_1'=>'general_plans#send_1'
+  get 'send_w1/:id'=>'work_plans#send_w1',:as=>"work_plan_send1"
+  get 'send_2/:id'=>'general_plans#send_2',:as=>'general_plan_send2'
+  get 'send_3/:id'=>'general_plans#send_3',:as=>'general_plan_send3'
+  get 'send_w2/:id'=>'work_plans#send_w2',:as=>'work_plan_send2'
+  get 'send_w3/:id'=>'work_plans#send_w3',:as=>'work_plan_send3'
 
 
   # Sample of named route:
