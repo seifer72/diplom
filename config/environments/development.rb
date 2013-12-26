@@ -33,10 +33,4 @@ Rts2Diplom::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
-    config.action_mailer.perform_deliveries = true
-    config.action_mailer.raise_delivery_errors = true
-
-    config.action_mailer.delivery_method = :smtp
-    config.action_mailer.smtp_settings = {:address => 'mail.msiu.ru', :post => 25, :domain => 'msiu.ru', :authentication => :plain}
-    config.action_mailer.default_url_options = { :host => "localhost:3000", :only_path => false }
 end
